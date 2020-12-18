@@ -10,10 +10,22 @@
 {{ config(materialized='table') }}
 
 with source_data as (
-
-    select 1 as id
+    
+    select 1 as id, 'eduardo' as user
     union all
-    select null as id
+    select 1 as id, 'eduardo' as user
+    union all
+    select 2 as id, 'alex' as user
+    union all
+    select 2 as id, 'alex' as user
+    union all
+    select 3 as id, 'woody' as user
+    union all
+    select 3 as id, 'woody' as user
+    union all
+    select 4 as id, 'linh' as user
+    union all
+    select 4 as id, 'linh' as user
 
 )
 
